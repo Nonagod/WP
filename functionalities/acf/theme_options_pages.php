@@ -49,9 +49,10 @@ add_action( 'init', function() {
 
 
 if( function_exists('get_fields') ) {
-    define('THEME_OPTIONS', array(
-        'general' => get_fields( 'theme-settings' ),
-        'contacts' => get_fields( 'ts_contacts' ),
-        // 'contacts' => get_fields( 'ts_contacts-' . CURRENT_LANG ), // для активного языка
-    ));
+    $_tmp = get_fields( 'theme-settings' );
+    $_tmp['contacts'] = get_fields( 'ts_contacts' );
+    // $_tmp['contacts'] = get_fields( 'ts_contacts-' . CURRENT_LANG ); // для активного языка
+
+    define('THEME_OPTIONS', $_tmp);
+    unset($_tmp);
 }

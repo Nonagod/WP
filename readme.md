@@ -4,6 +4,6 @@
 - [Справочник (ru)](https://wp-kama.ru/)
 
 ## WP plugins
-- []()
+- [ACF (Advance Custom Fields)](https://www.advancedcustomfields.com/) - проверенная PRO лeжит в `_plugins`
 - []()
 - []()

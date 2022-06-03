@@ -9,3 +9,4 @@ if( !function_exists( 'includeFunctionality' )) {
 
 
 includeFunctionality( 'wp_menu' );
+includeFunctionality( 'acf' );

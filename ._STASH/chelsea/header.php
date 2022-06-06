@@ -154,7 +154,7 @@ if( class_exists('WSTDGetData') ) {
         </header>
         <main class="main">
 
-            <?if( class_exists('WSTDBreadcrumbs') ) new WSTDBreadcrumbs(); ?>
+            <?if( class_exists( 'WSTDBreadcrumbs' ) ) new WSTDBreadcrumbs(); ?>
 
 
 

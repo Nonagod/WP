@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sergey
- * Date: 29.12.18
- * Time: 10:44
- */
-
 class WSTDBreadcrumbs {
 
     protected $element;//active element object

@@ -1,22 +1,6 @@
 <?php
-function _p($d, $force = false) {
-    if( is_user_logged_in() || $force ) {
-        ?><pre><? print_r($d); ?></pre><?
-    }
-}
 
-function requireFunctionality( $file_name ) {
-    $path = __DIR__ . $file_name;
-    if( file_exists($path) ) include_once $path;
-}
 
-function loadBLock( $block, array $options = [], $return = false ) {
-    $block_index_path = THEME_DIR . '/blocks/' . $block . '/index.php';
-    $block_folder = THEME_URL . '/blocks/' . $block . '/';
-    if( $return ) ob_start();
-    if (file_exists($block_index_path)) include $block_index_path;
-    if( $return ) return ob_get_clean();
-}
 
 
 function startAjaxContent( $ajax_name ) {

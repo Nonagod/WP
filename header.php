@@ -13,4 +13,5 @@ if( class_exists('WSTDGetData') ) {
         <title><? wp_title(); ?></title>
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body class="<?=$GLOBALS['theme']['body_class'] ?: ''?>">
+        <?if( class_exists( 'WSTDBreadcrumbs' ) ) new WSTDBreadcrumbs(); ?>

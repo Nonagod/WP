@@ -131,6 +131,7 @@ class WSTDGetData {
                 $return[$post->ID]['preview'] = $post->post_excerpt;
                 $return[$post->ID]['modify'] = $post->post_modified;
                 $return[$post->ID]['term_id'] = $post->term_id;
+                $return[$post->ID]['date'] = $post->post_date;
 
                 $return[$post->ID]['thumbnail'] = $this->getPostThumbnail($post->ID);
 
@@ -278,5 +279,3 @@ function sortingByParentTax( $posts ) {
     }
     return $result;
 }
-global $WSTDGetData;
-$WSTDGetData = new WSTDGetData();

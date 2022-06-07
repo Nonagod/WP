@@ -8,9 +8,10 @@ if( !function_exists( 'includeFunctionality' )) {
 }else throw new \Exception('WebsterSTD: Function "includeFunctionality" is already exist!');
 
 
-includeFunctionality( 'content_modifications' );
+includeFunctionality( 'data_modifications' );
 includeFunctionality( 'lazy_blocks' );
 includeFunctionality( 'breadcrumbs' );
 includeFunctionality( 'wp_menu' );
+includeFunctionality( 'content' );
 includeFunctionality( 'blocks' );
 includeFunctionality( 'acf' );

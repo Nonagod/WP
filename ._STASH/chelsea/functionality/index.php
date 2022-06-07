@@ -106,21 +106,3 @@ function checkElementByAvailability( $element ) {
 
     return $filter_result ;
 }
-
-/*turn on - wp thumbnails*/
-add_theme_support( 'post-thumbnails' );
-
-requireFunctionality('/classes/WSTDBreadcrumbs.php');
-requireFunctionality('/classes/WSTDGetData.php');
-
-/*BASE WP FUNCTIONALITY*/
-requireFunctionality('/wp-menu.php');
-
-/*PLUGINS FUNCTIONALITY*/
-requireFunctionality('/lazy_blocks.php');
-requireFunctionality('/polylang.php');
-requireFunctionality('/acf.php');
-
-requireFunctionality('/wp_hooks_filters.php');
-
-requireFunctionality('/post_lists_modify.php');

@@ -8,7 +8,7 @@
                 {
                     text: 'Произвольный блок',
                     onclick: function() {
-                        editor.insertContent('[load_block block=""');
+                        editor.insertContent('[load_block block=""]');
                     }
                 },
                 {

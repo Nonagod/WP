@@ -12,7 +12,7 @@ if( file_exists( THEME_DIR . '/.resources/shortcodes/index.php' )) {
                 return $buttons;
             });
             add_filter('mce_external_plugins', function( $plugin_array ) {
-                $plugin_array['WebsterSTD_shortcodes'] = THEME_DIR . '/.resources/shortcodes/tinymce_btn.js'; // wstd_btn - is id
+                $plugin_array['WebsterSTD_shortcodes'] = THEME_URL . '/.resources/shortcodes/tinymce_btn.js'; // wstd_btn - is id
                 return $plugin_array;
             });
         }

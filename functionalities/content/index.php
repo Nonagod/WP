@@ -1,10 +1,8 @@
 <?php
 require_once 'WSTDGetData.php';
+require_once 'shortcodes.php';
 
-
-// add_theme_support( 'post-thumbnails' );
-
-
+// actions
 add_action( 'wp', function() {
     global $ContentClass;
     $ContentClass = new WSTDGetData( get_the_ID( ));

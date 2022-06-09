@@ -3,6 +3,7 @@ add_theme_support('menus');
 
 add_action('init', function(){
     // register_nav_menu('<area_code>', __('[<area_code>] <area_name>'));
+    // register_nav_menus( array )
 });
 
 

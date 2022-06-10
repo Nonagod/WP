@@ -3,22 +3,6 @@
 
 
 
-function startAjaxContent( $ajax_name ) {
-    if( $ajax_name === filter_input(INPUT_POST, 'wstd_ajax', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ) {
-        $buffer_content = null;
-
-        for( $i = 0; $i < ob_get_level()+1; $i++ ) {
-            $buffer_content = ob_get_clean();
-        }
-        $buffer_content = null;
-    }
-}
-function endAjaxContent( $ajax_name ) {
-    if( $ajax_name === filter_input(INPUT_POST, 'wstd_ajax', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ) {
-//       echo ob_get_flush();
-       die();
-    }
-}
 
 function getThumbnail( $post_id ) {
     $data = null;

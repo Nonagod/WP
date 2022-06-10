@@ -3,6 +3,9 @@ require_once 'WSTDGetData.php';
 require_once 'shortcodes.php';
 
 
+// SUPPORTS
+// add_theme_support( 'post-thumbnails' );
+
 // ACTIONS
 
 add_action( 'wp', function() {

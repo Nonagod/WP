@@ -39,7 +39,7 @@ add_filter('use_block_editor_for_post','__return_false');
 /*===================================================================================================NEW for Site V2.0*/
 /*====================================================================================================================*/
 
-add_theme_support( 'post-thumbnails' );
+
 
 add_filter('wp_mail_content_type', create_function('', 'return "text/html";'));
 

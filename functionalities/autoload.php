@@ -15,3 +15,4 @@ includeFunctionality( 'wp_menu' );
 includeFunctionality( 'content' );
 includeFunctionality( 'blocks' );
 includeFunctionality( 'acf' );
+includeFunctionality( 'uam' );

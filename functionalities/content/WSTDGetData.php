@@ -97,8 +97,12 @@ class WSTDGetData {
             $return['opt'] = $this->getSiteOptions( $options );
 
 
-        if( is_string( $sort_handler ) && function_exists($sort_handler) ) {
-            $return['posts'] = $sort_handler( $return['posts'] );
+        if( !$args['paged'] ) {
+            if( is_string( $sort_handler ) && function_exists($sort_handler) ) {
+                $return['posts'] = $sort_handler( $return['posts'] );
+            }
+        }else {
+            $return['number_of_pages'] = $query->max_num_pages;
         }
 
         return $return;

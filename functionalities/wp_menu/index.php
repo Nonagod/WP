@@ -27,6 +27,7 @@ function getMenuItemsByLocation( $location, $args = [] ) {
 
     foreach( $menu_items as $item ) {
         $item = (array) $item;
+        if(function_exists('get_fields' )) $item['fields'] = get_fields('' . $item['ID']);
 
         $relations_array[$item['ID']] = $item['menu_item_parent'];
 

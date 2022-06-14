@@ -1,6 +1,7 @@
 <?php
 require_once 'WSTDGetData.php';
 require_once 'shortcodes.php';
+require_once 'pagination.php';
 
 
 // SUPPORTS

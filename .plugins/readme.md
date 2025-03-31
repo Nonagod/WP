@@ -1,0 +1,6 @@
+- [All-in-One WP Migration and Backup](https://wordpress.org/plugins/all-in-one-wp-migration/) (рабочие миграции)
+- [Custom Block Builder – Lazy Blocks](https://wordpress.org/plugins/lazy-blocks/)
+- [Custom Post Type UI](https://wordpress.org/plugins/custom-post-type-ui/)
+- [SVG Support](https://wordpress.org/plugins/svg-support/)
+- [ACF](https://www.advancedcustomfields.com/) (DL)
+- 
